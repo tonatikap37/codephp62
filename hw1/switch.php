@@ -23,6 +23,6 @@ switch ($a) {
         echo "เกรด D";
         break;
     default:
-        echo "ติดFแน่ๆกู";
+        echo "ติดF";
         break;
     }
