@@ -1,36 +1,36 @@
 <?php
 // myFunction();
 
-function myFunction()
-{
-    echo "my1";
-}
+// function myFunction()
+// {
+//     echo "my1";
+// }
 
-function functon2()
-{
-    echo "my";
+// function functon2()
+// {
+//     echo "my";
 
-    return "you call me";
-}
+//     return "you call me";
+// }
 //$calFunc = functon2();
 
 //echo $calFunc;
 
-function calnumber($num1, $num2 = 7)
-{
-    $a = $num1;
-    $b = $num2;
-    $c = $a + $b;
-    $num1 = 6;
-    return $c;
-}
+// function calnumber($num1, $num2 = 7)
+// {
+//     $a = $num1;
+//     $b = $num2;
+//     $c = $a + $b;
+//     $num1 = 6;
+//     return $c;
+// }
 //// $num1 = 5;
 // $num2 = 6;
 // echo calnumber($num1,9);
 // echo $num1;
-function calGPA($score)
-{
-    $gpa = "";
+// function calGPA($score)
+// {
+//     $gpa = "";
    // if ($num == 0 || $num == 1) {
     //    return 1;
     ///} else {
@@ -40,41 +40,35 @@ function calGPA($score)
         //>59 <70 = C
         //>49 <60 = D
         //<50 = F
-     switch ($score){
-     case $score >79:
-        $gpa ="A"
+function GPA($score = 70)
+{
+     switch ($score = 70){
+        case $score > 79:
         break;
         case ($score > 69 && $score <  80):
             echo "เกรด A" ;
             break;
-        case ($score >= 75):
-            echo "เกรด B+";
-            break;
-        case ($score >= 70):
+        case ($score >= 69):
             echo "เกรด B";
             break;
-        case ($score >= 65):
-            echo "เกรด C+";
-            break;
-        case ($score >= 60):
+        case ($score >= 59):
             echo "เกรด C";
             break;
-        case ($score >= 55):
-            echo "เกรด D+";
-            break;
-        case ($score >= 50):
+        case ($score >= 49):
             echo "เกรด D";
             break;
+            case ($score < 49):
+                echo "เกรด D";
+                break;
         default:
             echo "ติดF";
             break;
-
-        default
-           # code...
-           break;
     }
-    return $gpa;
+    echo "<br>";
+    return $score;
 }
+echo "<br>";
+echo GPA();
   //echo fatorail(5) . "<br>";
 
 // $Fullname = "Mr.Suradet Petcharanon";
